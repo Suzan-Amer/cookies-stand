@@ -1,0 +1,46 @@
+body{
+    background-image: url(https://image.freepik.com/free-photo/biscuits-wheat-with-copy-space-background_23-2148432372.jpg);
+    background-size: 100%;
+}
+
+h1{
+  font-size: 50px;
+  text-align: center;
+padding: 150px;
+font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
+
+nav ul li a{
+    padding: 200;
+      text-align: center;
+}
+
+nav ul li  {
+  display: inline;
+
+ font-size: 30px;
+   margin-left:150px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+
+img { 
+    width: 500px ;
+margin-left:500px;
+}
+
+p {
+text-align: center;
+font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-size: 20px;
+
+}
+
+
