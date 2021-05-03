@@ -243,6 +243,7 @@ const Paris = {
 console.log(Paris);
 Paris.calcCustHour();
 Paris.calcCookieHour();
+
 Paris.renderFunction();
 
 
