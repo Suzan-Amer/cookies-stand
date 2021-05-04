@@ -307,3 +307,73 @@ console.log(Lima);
 Lima.calcCustHour();
 Lima.calcCookieHour();
 Lima.renderFunction();
+
+
+function cookies (location ,min , max , avgCookie){
+
+
+    this.location = location ;
+    this.min = min ;
+    this.max = max ;
+    this.avgCookie = avgCookie ;
+    this.randomh = [];
+    this.Sales = 0 ;
+    this.hourSales() ;
+
+    
+}
+
+
+
+
+
+let Seattle = new cookies  ('Seattle', 23 ,65,6.3);
+let Tokyo = new cookies ('Tokyo', 3,24,1.2);
+let Dubai = new cookies ('Dubai', 11 ,38,3.7);
+let Paris = new cookies ('Paris', 30 ,38,2.3);
+let Lima = new cookies ('Lima', 2 ,16,4.6);
+
+
+
+let shops = [Seattle,Tokyo,Dubai,Paris,Lima];
+
+Seattle.hourSales();
+console.log (Seattle);
+
+Tokyo.hourSales();
+console.log(Tokyo);
+
+Dubai.hourSales();
+console.log(Dubai);
+
+Paris.hourSales();
+console.log(Paris);
+
+
+Lima.hourSales();
+console.log(Lima);
+Lima.hourSales();
+
+let theParent = document.getElementById('Cookie salmon');
+Shops.prototype.render=function(){
+let theTabel = document.createElement('table');
+theParent.appendChild(theTabel);
+
+let theHeader = document.createElement('tr');
+theTabel.appendChild(theHeader);
+let th=document.createElement('th');
+theHeader.appendChild(th);
+th.textContent = '.........';
+theHeader.appendChild(th);
+th.textContent ='sales location total';
+}
+
+
+Shops.prototype.hours =function(){
+    for (let i=0;i<hours.length;i++){
+           
+     let cookiesNum= Math.floor(this.randomCust() *this.avgCooki);
+    this.randomh.push(cookiesNum);
+        this.Sales += cookiesNum ;
+
+}}
