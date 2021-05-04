@@ -12,25 +12,29 @@ font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 
 
+
+
 nav ul li a{
-    padding: 200;
+    padding: 100;
       text-align: center;
+      
 }
 
 nav ul li  {
-  display: inline;
-
- font-size: 30px;
-   padding: 20px;
-   margin: 30px;
+ 
+ 
+  display:inline;
+   
 }
-nav ul li a{
+nav ul li a {
 text-decoration: none;
-padding: 20px;
-margin:30px ;
+margin-left: 700px;
+font-size: 30px;
 
 
+   
 }
+
 
 
 h2 {
@@ -40,7 +44,7 @@ h2 {
 
 }
 
-img { 
+#main{ 
     width: 500px ;
 margin-left:500px;
 }
@@ -52,5 +56,49 @@ font-size: 20px;
 
 }
 
+article p {
+  text-align: center;
+  font-size: 20px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+ article img {
+   width: 300;
+   margin-left:600px;
+   border-radius: 200px;
 
+ }
+
+ #img1 {
+   width: 400px;
+   border-radius: 80px;
+   margin-left:600px;
+   padding-top: 290px;
+ }
+
+ #fish{
+   border-radius: 100px;
+   width: 300px;
+   margin-left:600px;
+   padding-top: 80px;
+  
+ }
+#fro{
+  width: 400px;
+  margin-left:600px;
+  padding-top: 80px;
+ border-radius: 90px;
+}
+
+#fam{
+  width: 600px;
+  margin-left:450px;
+  padding-top: 230px;
+ border-radius: 30px;
+}
+#ts{
+  width: 400px;
+  margin-left:600px;
+  padding-top: 80px;
+ border-radius: 500px;
+}
