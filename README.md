@@ -2,6 +2,10 @@
 
 ## the idea for js code from baraa
 ## work in gruop whit wijdan
+body{
+    background-image: url(https://image.freepik.com/free-photo/biscuits-wheat-with-copy-space-background_23-2148432372.jpg);
+    background-size: 100%;
+}
 
 
 

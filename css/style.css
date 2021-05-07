@@ -1,45 +1,36 @@
 body{
-    background-image: url(https://image.freepik.com/free-photo/biscuits-wheat-with-copy-space-background_23-2148432372.jpg);
-    background-size: 100%;
+background-image: url(https://st2.depositphotos.com/1772367/7535/i/950/depositphotos_75351927-stock-photo-cookies-background.jpg); 
+  background-size: 100%;
 }
 
 h1{
-  font-size: 50px;
+  font-size: 90px;
   text-align: center;
-padding: 150px;
+ padding-bottom: 100px;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 
-
-
-
-nav ul li a{
-    padding: 100;
-      text-align: center;
-      
+nav ul li {
+  display: inline;
+  text-decoration: none;
+  font-size: 50px;
 }
 
-nav ul li  {
+nav ul li a  {
+
  
- 
-  display:inline;
-   
+  text-decoration: none;
+ padding-left: 300px;
 }
-nav ul li a {
-text-decoration: none;
-margin-left: 700px;
-font-size: 30px;
 
 
-   
-}
 
 
 
 h2 {
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 
 }
@@ -49,10 +40,10 @@ h2 {
 margin-left:500px;
 }
 
-p {
+#p1 {
 text-align: center;
 font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-font-size: 20px;
+font-size: 25px;
 
 }
 
@@ -62,49 +53,43 @@ article p {
   font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
- article img {
-   width: 300;
-   margin-left:600px;
-   border-radius: 200px;
 
- }
 
- #img1 {
-   width: 400px;
-   border-radius: 80px;
-   margin-left:600px;
-   padding-top: 290px;
- }
 
- #fish{
-   border-radius: 100px;
-   width: 300px;
-   margin-left:600px;
-   padding-top: 80px;
-  
- }
-#fro{
-  width: 400px;
-  margin-left:600px;
-  padding-top: 80px;
- border-radius: 90px;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
 
-#fam{
-  width: 600px;
-  margin-left:450px;
-  padding-top: 230px;
- border-radius: 30px;
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
 }
-#ts{
-  width: 400px;
-  margin-left:600px;
-  padding-top: 80px;
- border-radius: 500px;
+
+#cookieForm{
+ font-size: 30px;
+ text-align: center;
+ padding-top: 30px;
 }
-#fm1 {
+
+div img{
+  float: right;
+  border-bottom: 200px;
+}
+#cut p{
   text-align: center;
+  font-size: 20px;
+}
+
+.last{
+  width: 400px;
+  float:right;
+  padding-right: 100px; 
+ 
+}
+
+#p6 {
+ padding-left: 300px;
+
   font-size: 30px;
-  color: rgb(172, 101, 55);
-  padding-top: 400px;
 }
