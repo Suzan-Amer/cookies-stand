@@ -8,6 +8,7 @@ h1{
   text-align: center;
  padding-bottom: 100px;
 font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+color: rgb(74, 104, 114);
 }
 
 
@@ -32,6 +33,7 @@ h2 {
     text-align: center;
     font-size: 40px;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color : rgb(74, 104, 114);
 
 }
 
@@ -50,7 +52,7 @@ font-size: 25px;
 article p {
   text-align: center;
   font-size: 20px;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
 
@@ -64,6 +66,8 @@ table, th, td {
 table, th, td {
   border: 1px solid black;
   border-collapse: collapse;
+ 
+  margin-left: 400px;
 }
 
 #cookieForm{
@@ -72,24 +76,69 @@ table, th, td {
  padding-top: 30px;
 }
 
-div img{
-  float: right;
-  border-bottom: 200px;
-}
-#cut p{
+section p{
+  font-size: 30px;
   text-align: center;
-  font-size: 20px;
+  padding-top: 20px;
 }
-
-.last{
-  width: 400px;
-  float:right;
-  padding-right: 100px; 
+ 
+section ol li {
+  text-align: center;
+  font-size: 25px;
  
 }
 
-#p6 {
- padding-left: 300px;
+#open{
+  font-size: 40px;
+  text-align: center;
+  padding-top: 40px;
+}
 
+#love{
   font-size: 30px;
+  text-align: center;
+  padding-top: 30px;
+}
+
+.cook{
+  width: 300px;
+  height: 300px;
+  margin: 20px;
+  padding-right: 150px;
+  
+}
+
+#fam {
+  font-size: 30px;
+  padding-top: 30px;
+} 
+
+
+.fam{
+margin-left: 400px;
+  width: 400 px;
+  height: 400px;
+ 
+}
+ 
+#ts{
+  font-size: 30px;
+  text-align: center;
+  padding-top: 200px ;
+}
+
+#tss {
+  border-bottom: 200px;
+  margin-left: 600px;
+}
+
+footer h3{
+  font-size: 40px;
+  text-align: center;
+}
+
+
+#footer{
+  text-align: center;
+  padding-top: 300px;
 }
