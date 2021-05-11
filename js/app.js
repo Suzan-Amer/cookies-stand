@@ -11,7 +11,7 @@ function random(min,max ){
 
 
 let locationarr = [];
-function LOCATION (loc, min, max, avgcookie) {
+function Location (loc, min, max, avgcookie) {
   this.loc = loc;
   this.min = min;
   this.max = max;
@@ -20,11 +20,12 @@ function LOCATION (loc, min, max, avgcookie) {
  this.cookieHour= [];
  this.total=0;
  locationarr.push(this);
+ 
 }
+console.log(locationarr);
 
 
-
-LOCATION.prototype.calccookieHour = function () {
+Location.prototype.calccookieHour = function () {
   for (let i = 0; i < hours.length; i++) {
     this.cookieHour.push(Math.floor(this.custHour[i] * this.avgcookie));
     this.total += this.cookieHour[i];
@@ -32,26 +33,29 @@ LOCATION.prototype.calccookieHour = function () {
 }
 
 
-LOCATION.prototype.calccustHour= function () {
+Location.prototype.calccustHour= function () {
     for (let i = 0; i < hours.length; i++) {
-      this.custHour.push(random(this.minCust, this.maxCust));
+      this.custHour.push(random(this.min, this.max));
+    
     }
   }
 
 
 
-let Seattle = new LOCATION('seattle', 23, 65,3.6);
-let tokyo = new LOCATION('tokyo', 23,24,1.2);
-let Dubai = new LOCATION('Dubai', 11, 38, 3.7);
-let Paris = new LOCATION('Paris', 20, 38, 2.3);
-let Lima = new LOCATION('Lima', 2, 16, 4.6);
+let Seattle = new Location('seattle', 23, 65,3.6);
+console.log(Seattle.custHour);
+let tokyo = new Location('tokyo', 23,24,1.2);
+let Dubai = new Location('Dubai', 11, 38, 3.7);
+let Paris = new Location('Paris', 20, 38, 2.3);
+let Lima = new Location('Lima', 2, 16, 4.6);
 
 
 
-let theparent = document.getElementById('theparent');
+let theparent = document.getElementById('parent');
+console.log(theparent);
 let table = document.createElement('table');
+console.log(table);
 theparent.appendChild(table);
-
 
 
 
@@ -77,7 +81,7 @@ function makeheder() {
 
 makeheder();
 
-LOCATION.prototype.render=function () {
+Location.prototype.render=function () {
   let datarow=document.createElement('tr');
   table.appendChild(datarow);
 
@@ -106,6 +110,9 @@ function makefooter() {
  footertable.appendChild(footerth);
  footerth.textContent='total';
 
+
+ let  totalTotal = 0 ;
+
  for (let i = 0 ; i < hours.length ; i++){
    let totalHour=0;
 
@@ -113,17 +120,23 @@ function makefooter() {
 totalHour+=locationarr[j].cookieHour[i];
    }
 
+    totalTotal += totalHour
+
    
    let footertotal= document.createElement('th');
    footertable.appendChild(footertotal);
    footertotal.textContent=totalHour;
  }
+ let totalTh = document.createElement('th');
+ footertable.appendChild(totalTh);
+ totalTh.textContent=totalTotal; 
 }
-
+ 
 
 for (let i = 0 ; i < locationarr.length ; i++){
   locationarr[i].calccustHour();
-  locationarr[i].cookieHour;
+  locationarr[i].calccookieHour();
+  console.log(locationarr[i].total);
   locationarr[i].render();
   }
 
@@ -138,19 +151,20 @@ function submitter(event) {
 
   table.deleteRow(table.rows.length-1)  
 
-  let shop =event.target.shop1.value ;
-  let min=event.target.min1.value;
-  let max=event.target.max1.value;
-  let avgCookie =event.target.avg1.value;
+  let shop=event.target.shop.value ;
+  let min=event.target.min.value;
+  let max=event.target.max.value;
+  let avgCookie=event.target.avgcookie.value;
     
-    let cookieForm = new cookSal( min, max, shop ,avgCookie , [],[],0);
-
+    let cookieShop = new cookSales( shop , min , max , avgCookie );
+  cookieShop.render();
   
-    newLocation.calccustHour();
-newLocation.calccookieHour();
-newLocation.render();
+  location.calccustHour();
+  location.calccookieHour();
+  
+    
 
 document.getElementById('cookieform').reset();
 console.log(cookieForm);
 }
-makefooter();
+
